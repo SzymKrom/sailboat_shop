@@ -1,10 +1,10 @@
 const http = require('http');
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 9092;
 
 
 const requestListener = function (req, res) {
   res.writeHead(200);
-  res.end('Witaj zeglarzu');
+  res.end('witamy w sklepie z zaglowkami');
 }
 
 const server = http.createServer(requestListener);
